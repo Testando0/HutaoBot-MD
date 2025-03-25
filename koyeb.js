@@ -5,12 +5,12 @@ RUN sudo dnf -y update &&\
     sudo dnf install -y git ffmpeg ImageMagick nodejs yarnpkg libwebp &&\
     sudo dnf clean all -y
 
-RUN git clone https://github.com/GataNina-Li/GataBot-MD
+RUN git clone https://github.com/testando0/HutaoBot-MD
 
-WORKDIR /root/GataBot-MD
+WORKDIR /root/HutaoBot-MD
 
-COPY ./root/GataBot-MD
+COPY ./root/HutaoBot-MD
 
 RUN yarn install
 
-CMD ["node", "index.js"]
+CMD ["node", "main.js"]
