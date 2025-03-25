@@ -11,6 +11,6 @@ WORKDIR /root/HutaoBot-MD
 
 COPY ./root/HutaoBot-MD
 
-RUN yarn install
+RUN npm install
 
 CMD ["node", "main.js"]
